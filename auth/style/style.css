@@ -1,0 +1,143 @@
+/* Import fonts */
+@import "../../cabinet/fonts/Montserrat.css";
+
+/* Login Page Settings */
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #FAFAFF;
+}
+
+.wrapper {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	    -ms-transform: translate(0, -50%);
+	        transform: translate(0, -50%);
+
+	padding-bottom: 110px;
+}
+
+.login-container {
+	margin: 0 auto;
+	padding: 45px 20px;
+
+	width: 22.75rem;
+
+	background-color: #fff;
+	border-radius: 25px;
+	-webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+	        box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+
+	display: -ms-grid;
+	display: grid;
+	row-gap: 45px;
+	justify-items: center;
+}
+
+.login_form {
+	display: none;
+}
+
+.logo {
+	width: 12.5rem;
+}
+
+.input {
+	height: 3rem;
+	width: 100%;
+
+	border: none;
+	background-color: #ecf2f7;
+	border-radius: 3px;
+	font-size: 1.125rem;
+	outline-color: #2b60e6;
+	padding-left: 20px;
+
+	margin: 10px 0;
+}
+/* Меняем цвет placeholder для Chrome и Safari */
+.input::-webkit-input-placeholder {
+	color: #abacac;
+}
+/* Меняем цвет placeholder для Mozilla */
+.input::-moz-placeholder {
+	color: #abacac;
+}
+
+.button {
+	width: 12.5rem;
+	height: 3.5rem;
+
+	text-align: center;
+
+	border-radius: 50px;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	opacity: 1;
+	background-color: #2d315c;
+	color: #fff;
+	font-size: 1.125rem;
+
+	/* Плавная смена цвета при наведении мышкой */
+	-webkit-transition: all 0.3s ease;;
+	     -o-transition: all 0.3s ease;;
+			transition: all 0.3s ease;
+
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #0c1042;
+}
+
+.error-info {
+	background: #f2dede;
+	color: #a94442;
+	padding: 10px;
+	width: 100%;
+	border-radius: 5px;
+	white-space: nowrap;
+	text-align: center;
+
+	margin-bottom: 20px;
+}
+/***********************/
+
+/* Media queries */
+@media screen and (max-width: 400px) {
+	.login-container {
+		width: auto;
+		margin: 0 15px;
+	}
+
+	.error-info p {
+		white-space: normal;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	.login-container {
+		padding: 40px 20px;
+
+		row-gap: 30px;
+	}
+
+	.logo {
+		width: 11rem;
+	}
+}
