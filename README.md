@@ -7,6 +7,4 @@ All sensitive information has been removed
 
 ![lk2](https://github.com/user-attachments/assets/f34f2561-e505-4793-9ffb-d5224c892823)
 
-![Screenshot 2025-01-14 at 19 06 19](https://github.com/user-attachments/assets/2c63636f-22e2-49b9-9fff-7742ecc0b39a)
-
-![Screenshot 2025-01-14 at 19 06 56](https://github.com/user-attachments/assets/d05e1e5b-391d-466c-b209-3fc8dc82a3e0)
+<img width="431" alt="Screenshot 2025-01-14 at 19 08 12" src="https://github.com/user-attachments/assets/92be103e-367c-4e21-9d91-4d7caa2dda1a" />
