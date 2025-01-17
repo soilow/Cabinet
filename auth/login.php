@@ -28,7 +28,12 @@ $query = Database::Query($fetch=false, "SELECT `user`, `password`, `fio`, `uid`,
 if ($query->rowCount() == 1) {
 	$row = $query->fetch();
 
-	if ($row['user'] === $username && $row['password'] === $password && $row['blocked'] == '0') {
+	if ($row['blocked'] == '1') {
+		header("Location: ../index.php?error=Ваш аккаунт заблокирован");
+		exit;
+	}
+
+	if ($row['user'] === $username && $row['password'] === $password) {
 		$_SESSION['username'] = $row['user'];
 		$_SESSION['password'] = $row['password'];
 		$_SESSION['fio'] = $row['fio'];
@@ -37,8 +42,6 @@ if ($query->rowCount() == 1) {
 
 		header("Location: ../cabinet/");
 		exit;
-	} else {
-	    header("Location: ../index.php?error=Ваш аккаунт заблокирован");
 	}
 }  else {
 	header("Location: ../index.php?error=Неправильный логин или пароль");
